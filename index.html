@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Online Resume Builder</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <section class="sign-up">
+        <div class="container">
+            <h1 class="logo">Online CV Builder</h1>
+            <p class="text">Get an eye catchy resume template and make one for <span style="color: green;">FREE</span></p>
+            
+            <div class="pages-link">
+                <button class="sign active" onclick="toggleForm('signup')">Sign Up</button>
+                <button class="sign" onclick="toggleForm('signin')">Sign In</button>
+            </div>
+
+            <div class="form-container">
+                <div id="signup-form" class="form">
+                    <input type="text" placeholder="Full Name" id="Sname"/>
+                    <input type="email" placeholder="Email" id="Semail"/>
+                    <input type="password" placeholder="Password" id="Spass"/>
+                    <button type="submit" class="submit-btn" onclick="clickSign()">Create Account</button>
+                    <div>
+                        <span>OR</span>
+                        <p class="sign" style="margin-top: 5px;"><i class="fa-brands fa-google" style="margin-right: 15px;"></i>Sign Up using Google</p>
+                        <p class="sign" style="margin-top: 5px;"><i class="fa-brands fa-facebook" style="margin-right: 15px;"></i>Sign Up using Facebook</p>
+                        <p class="sign" style="margin-top: 5px;"><i class="fa-brands fa-linkedin" style="margin-right: 15px;"></i>Sign Up using LinkedIn</p>
+                    </div>
+                </div>
+
+                <div id="signin-form" class="form hidden">
+                    <input type="email" placeholder="Email" id="l-email" required />
+                    <input type="password" placeholder="Password" id="l-pass" required />
+                    <button type="submit" class="submit-btn" onclick="login()">Login</button>
+                    <div>
+                        <span>OR</span>
+                        <p class="sign" style="margin-top: 5px;"><i class="fa-brands fa-google" style="margin-right: 15px;"></i>Sign in using Google</p>
+                        <p class="sign" style="margin-top: 5px;"><i class="fa-brands fa-facebook" style="margin-right: 15px;"></i>Sign in using Facebook</p>
+                        <p class="sign" style="margin-top: 5px;"><i class="fa-brands fa-linkedin" style="margin-right: 15px;"></i>Sign in using LinkedIn</p>
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
